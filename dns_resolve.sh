@@ -1,6 +1,6 @@
 #!/bin/sh
 
-domain="ameldawrites.com"
+domain="<INSERT_YOUR_FQDN"
 aname_resolve=$(/usr/bin/host $domain| awk 'NR==2{print $5}')
 dns_refused="5(REFUSED)"
 resolve_success=$(/usr/bin/touch /root/$domain)
